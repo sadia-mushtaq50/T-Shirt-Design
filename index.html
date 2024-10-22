@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirt design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <h1 class="head">T-Shirt Designer</h1>
+    <div class="container">
+        <div class="shirt-display">
+            <img src="/public/shirt-black.png" alt="Shirt" id="shirt" style="width: 22rem; height: 25.4rem;" />
+            <div id="textOnShirt"></div>
+        </div>
+
+        <div class="editable">
+            <div class="color-options">
+                <h2>Shirt Variant</h2>
+                <div class="buttons2">
+                    <button class="color-btn" style="background-color: yellow;" onclick="changeColor('yellow')"></button>
+                    <button class="color-btn" style="background-color: purple;" onclick="changeColor('purple')"></button>
+                    <button class="color-btn" style="background-color: green;" onclick="changeColor('green')"></button>
+                    <button class="color-btn" style="background-color: black;" onclick="changeColor('black')"></button>
+                    <button class="color-btn" style="background-color: grey;" onclick="changeColor('gray')"></button>
+                </div>
+            </div><br>
+            <hr>
+            <div>
+                <textarea id="text-area" placeholder="Write something!"></textarea>
+                <div class="controls">
+                    <input type="color" id="color-picker"  title="Pick a text color">
+                    <button class="cntrl-btn" id="bold-btn"><i class="fa-solid fa-bold"></i></button>
+                    <button class="cntrl-btn" id="italic-btn"><i class="fa-solid fa-italic"></i></button>
+                    <button class="cntrl-btn" id="left-align-btn"><i class="fa-solid fa-align-left"></i></button>
+                    <button class="cntrl-btn" id="center-align-btn"><i class="fa-solid fa-align-justify"></i></button>
+                    <button class="cntrl-btn" id="right-align-btn"><i class="fa-solid fa-align-right"></i></button>
+                    <button class="cntrl-btn" id="increase-btn">+</button>
+                    <button class="cntrl-btn" id="decrease-btn">-</button><br>
+                    <input type="number" id="size-input" placeholder="Font size(px)" min="1">
+                    <button id="update-size-btn">Update Size</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
